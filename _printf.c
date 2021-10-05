@@ -103,7 +103,7 @@ int buf_push(char *str, int *buffindex, char *buffer)
 
 	if (str == NULL)
 		return (buf_push(null, buffindex, buffer));
-	if (str == '\0')
+	if (str == (((void *)0))
 		return (printed);
 	while (tmplen)
 	{

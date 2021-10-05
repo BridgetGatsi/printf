@@ -80,6 +80,6 @@ char *_putS(va_list l, __attribute__((unused)) printing_format * format)
 			*_s2 = *s, _s2 += 1;
 		s++;
 	}
-	_s2 = '\0';
+	_s2 = (void *)0;
 	return (s2);
 }
